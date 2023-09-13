@@ -1,0 +1,26 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: simple-ingress
+  namespace: hau-eks-backend-app
+  annotations:
+    alb.ingress.kubernetes.io/load-balancer-name: hau-ingress-alb
+    alb.ingress.kubernetes.io/target-type: ip
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/healthcheck-path: /todos
+    alb.ingress.kubernetes.io/healthcheck-port: svc-port
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS": 443}]'
+    # alb.ingress.kubernetes.io/ssl-redirect: '443'
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-2:492804330065:certificate/b593e104-79c9-4185-a262-abb6be658e2f #ARN of ACM back-end SSL certificate
+spec:
+  ingressClassName: alb
+  rules:
+    - http:
+        paths:
+          - path: /todos
+            pathType: Prefix
+            backend:
+              service:
+                name: hau-eks-backend-service
+                port:
+                  name: svc-port
