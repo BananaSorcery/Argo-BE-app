@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hau-eks-backend-service
+  namespace: hau-eks-backend-app
+  labels:
+    app: hau-backend-app
+spec:
+  type: ClusterIP
+  selector:
+    app: hau-backend-app
+  ports:
+    - protocol: TCP
+      name: svc-port
+      port: 80
+      targetPort: 5000
