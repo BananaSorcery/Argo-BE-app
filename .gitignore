@@ -1,5 +1,5 @@
 .gitignore
 env.sh
 test
-be-app-chart
+'be-app-chart'
 K8s
