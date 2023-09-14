@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: backend-server
-        image: 492804330065.dkr.ecr.us-west-2.amazonaws.com/hau-todo-be:4.0
+        image: 492804330065.dkr.ecr.us-west-2.amazonaws.com/hau-todo-be:6.0
         ports:
         - name: server-port
           containerPort: 5000
@@ -32,6 +32,6 @@ spec:
         - name : POSTGRES_USER
           value : "postgres"
         - name : POSTGRES_PASSWORD
-          value : "_[%=!x?<J(Lfh!am"
+          value : "<yFglvZmIKj8md#3"
       nodeSelector:
         kubernetes.io/os: linux

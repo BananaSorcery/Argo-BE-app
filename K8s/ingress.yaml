@@ -11,7 +11,7 @@ metadata:
     alb.ingress.kubernetes.io/healthcheck-port: svc-port
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS": 443}]'
     # alb.ingress.kubernetes.io/ssl-redirect: '443'
-    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-2:492804330065:certificate/b593e104-79c9-4185-a262-abb6be658e2f #ARN of ACM back-end SSL certificate
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-2:492804330065:certificate/e6589326-c9b4-46bb-b962-27d6136cdd29 #ARN of ACM back-end SSL certificate
 spec:
   ingressClassName: alb
   rules:
