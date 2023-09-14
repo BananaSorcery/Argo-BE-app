@@ -1,2 +1,5 @@
+.gitignore
 env.sh
 test
+be-app-chart
+K8s
