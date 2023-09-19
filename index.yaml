@@ -3,7 +3,17 @@ entries:
   be-app-chart:
   - apiVersion: v2
     appVersion: "6.0"
-    created: "2023-09-14T20:18:09.436573516+07:00"
+    created: "2023-09-19T14:20:50.073434612+07:00"
+    description: A Helm chart for Kubernetes
+    digest: c4a6e79c5e94c9d5973264c956a823011bf293845c14ccfe2d807ee90d605190
+    name: be-app-chart
+    type: application
+    urls:
+    - be-app-chart-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: "6.0"
+    created: "2023-09-19T14:20:50.072834695+07:00"
     description: A Helm chart for Kubernetes
     digest: df2c492292ed9982cb6c23ae4f02812950504175192edccf4148caf4931ea368
     name: be-app-chart
@@ -13,7 +23,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: "6.0"
-    created: "2023-09-14T20:18:09.435967121+07:00"
+    created: "2023-09-19T14:20:50.067196302+07:00"
     description: A Helm chart for Kubernetes
     digest: 20a876f6beea2f0308a279e6d5ba841d14cda6b550f83666a69ae419545de959
     name: be-app-chart
@@ -21,4 +31,4 @@ entries:
     urls:
     - be-app-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2023-09-14T20:18:09.435273886+07:00"
+generated: "2023-09-19T14:20:50.005018526+07:00"
